@@ -28,8 +28,8 @@ Este repositório apresenta uma **análise completa** de dados do **IF Goiano �
 ### 2. **Previsão com ML**
 | Alvo | Modelo |
 |------|--------|
-| **Evasão** | Random Forest |
-| **IRA Alto (≥7.5)** | Random Forest |
+| **Evasão** | Random Forest e Logistic Regression |
+| **IRA Alto (≥7.5)** | Random Forest e Logistic Regression |
 
 ---
 
@@ -87,8 +87,12 @@ Este repositório apresenta uma **análise completa** de dados do **IF Goiano �
 | Regressão Logística | 0.551 | 0.409 | 0.575 | 0.478 |
 | **Random Forest** | **0.675** | **0.536** | **0.682** | **0.600** |
 
-> Matrizes e importância: [`results/matrizes_confusao/`](./results/matrizes_confusao/), [`results/importancia_features/`](./results/importancia_features/)
-
+**Features mais importantes (IRA Alto (≥7.5)):**
+1. **IRA** – `0.7232`  
+2. **Curso** – `0.1215`  
+3. **Forma de Ingresso** – `0.0837`  
+4. **Etnia** – `0.0305`  
+5. **Sexo** – `0.0195`
 ---
 
 ## Tecnologias
@@ -112,14 +116,13 @@ source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
 
 # 3. Instale dependências
-pip install -r requirements.txt
+pip install -r requirements
 
 # 4. Abra no Jupyter
 jupyter notebook
 Execute:
 eda/analise_demografica.ipynb
 models/modelos_ml.ipynb
-
 
 Relatório Técnico (SBC)
 Formato oficial (8–12 páginas):
@@ -129,14 +132,6 @@ Autor
 SayccBr
 GitHub | IF Goiano – Campus Iporá
 
-"Dados que salvam futuros."
-text---
-
-## PRONTO PARA USAR!
-
-1. **Copie todo o código acima**
-2. **Cole em `README.md` no seu repositório**
-3. **Commit e push**
 Relatório Técnico (SBC)
 Formato oficial:
 Relatorio_Tecnico.pdf

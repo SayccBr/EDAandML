@@ -88,11 +88,11 @@ Este repositório apresenta uma **análise completa** de dados do **IF Goiano �
 | **Random Forest** | **0.675** | **0.536** | **0.682** | **0.600** |
 
 **Features mais importantes (IRA Alto (≥7.5)):**
-1. **IRA** – `0.7232`  
-2. **Curso** – `0.1215`  
-3. **Forma de Ingresso** – `0.0837`  
-4. **Etnia** – `0.0305`  
-5. **Sexo** – `0.0195`
+1. **Descrição do Curso** – `0.5011`  
+2. **Forma de Ingresso** – `0.2447`  v
+3. **Sexo** – `0.0922`  
+4. **Etnia/Raça** – `0.0813`  
+5. **Forma de Ingresso com Cota** – `0.0590`
 ---
 
 ## Tecnologias
@@ -111,12 +111,10 @@ git clone https://github.com/SayccBr/EDAandML.git
 cd EDAandML
 
 # 2. Crie ambiente virtual
-python -m venv venv
-source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
 
 # 3. Instale dependências
 pip install -r requirements
+sklearn
 
 # 4. Abra no Jupyter
 jupyter notebook
@@ -124,6 +122,7 @@ Execute:
 eda/analise_demografica.ipynb
 models/modelos_ml.ipynb
 
+# Sobre
 Relatório Técnico (SBC)
 Formato oficial (8–12 páginas):
 report/Relatorio_Tecnico.pdf
@@ -133,6 +132,5 @@ SayccBr
 GitHub | IF Goiano – Campus Iporá
 
 Relatório Técnico (SBC)
-Formato oficial:
 Relatorio_Tecnico.pdf
 

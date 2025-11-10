@@ -131,6 +131,7 @@ Autor
 SayccBr
 GitHub | IF Goiano – Campus Iporá
 
-Relatório Técnico (SBC)
-Relatorio_Tecnico.pdf
+Relatório Técnico (SBC) ->
+Relatorio_Tecnico.pdf |
+Dados utilizados -> Relatorio-IF.xlsx
 
